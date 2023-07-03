@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&family=Mochiy+Pop+One&family=Mochiy+Pop+P+One&family=Noto+Sans+Nag+Mundari:wght@500;600&family=Poppins:wght@500;800&display=swap');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Hachi Maru Pop', cursive;
+    font-family: 'Mochiy Pop One', sans-serif;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-family: 'Noto Sans Nag Mundari', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	background:black;
+	color:white;
+}
+
+body{
+	overflow-x: hidden;
+	color: white;
+}
+
+.header{
+	height: 100vh;
+	width: 100%;
+}
+.navbar{
+	padding: 15px 18px !important;
+}
+.logo{
+	color: white!important;
+	font-weight: 600;
+}
+.nav-item{
+	margin: 0 10px;
+
+}
+.nav-item .nav-link{
+	
+	color:rgba(255, 255, 255, 0.848);
+	font-size: 14px;
+	font-weight: 500;
+	position: relative;	
+}
+
+.nav-link::after{
+	content: '';
+	position: absolute;
+	bottom: -1px;
+	left: 0px;
+	background: rgb(255, 129, 57);
+	width: 0%;
+	height: 3px;
+	transition: 0.4s ease-in-out;
+}
+
+.nav-item:hover .nav-link::after{
+    width: 100%;	
+}
+span:hover{
+	color: rgb(255, 129, 57);
+}
+.btn-navbar{
+	display: inline-block;
+	padding: 10px 43px;
+	border: 1px solid rgb(36, 193, 255);
+	color:white;
+	border-radius: 50px;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	background: rgb(36, 193, 255);
+	transition: 0.2s ease;
+}
+.img-home{
+	width: 100%;
+	height: 100%;
+	margin-right: 1px;
+}
+
+.btn-navbar:hover{
+	background: transparent;
+	color: rgb(255, 129, 57);
+	border: 1px solid rgb(255, 129, 57);
+}
+.popular{
+	margin-bottom: 50px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+
+}
+
+/*home section start*/
+.content-home2{
+	color: white;
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.home-heading{
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 74px;
+	
+}
+.para-home{
+	font-size: 13px;
+	font-weight: 500;
+	color:rgba(255, 255, 255, 0.42);
+	max-width: 400;
+	line-height: 24px;
+	margin: 14px 0px;
+}
+.home-links{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	border: 1px solid rgb(36, 193, 255);
+	background: rgb(36, 193, 255);
+	margin: 20px 0px;
+	border-radius: 50px;
+	padding: 10px 37px;
+	font-size: 14px;
+	font-weight: 600;
+	transition: 0.2s ease;
+}
+
+.home-links:hover{
+	background: transparent;
+	color: rgb(255, 129, 57);
+	border: 1px solid rgb(255, 129, 57) !important;
+}
+.home-span{
+	color: rgb(255, 129, 57);
+}
+.btn-2{
+	border: 1px solid rgb(36, 193, 255);
+	color: rgb(36, 193, 255);
+	background: transparent;
+}
+
+/*products*/
+
+#products .card img{
+	width: 100%;
+	transition: all 2s ease;
+}
+
+#products .card:hover{
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#products .card, #products .card .card-body{
+	overflow: hidden;
+}
+.forcolor{
+	background: transparent;
+	color: black;
+}
+
+/*footer*/
+#footer ul{
+	list-style-type: none;
+}
+#footer a{
+	text-decoration: none;
+	color: white;
+}
+#footer{
+	color: white;
+}
